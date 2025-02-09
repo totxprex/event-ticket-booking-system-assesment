@@ -1,3 +1,20 @@
+# Node modules
 node_modules/
-*.env
-*.db
+
+# SQLite database file
+orders.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Environment variable files
+.env
+
+# Build output (if applicable)
+dist/
+
+# OS generated files
+.DS_Store
+Thumbs.db
