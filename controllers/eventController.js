@@ -154,7 +154,7 @@ exports.getStatus = (req, res, next) => {
   try {
     const { eventId } = req.params;
     if (!events.has(eventId)) {
-      return res.status(404).json({ error: "Event not found" });
+      return res.status(404).json({ error: "Event not found -T" });
     }
     const event = events.get(eventId);
     res.status(200).json({

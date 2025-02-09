@@ -17,13 +17,11 @@ This is a Node.js application that implements an event ticket booking system. It
 ## Setup and Running Instructions
 
 1. **Clone the repository:**
-   git clone https://github.com/totxprex/event-ticket-booking-system-assesment.git
-   cd event-ticket-booking-system-assesment
+   - git clone https://github.com/totxprex/event-ticket-booking-system-assesment.git
+   - cd event-ticket-booking-system-assesment
 2. **Run the Server**
-   npm install
-   npm start
-3. **Explore SQLite DB**
-   Open orders.db in root with DB Browser for SQLite to explore database
+   - npm install
+   - npm start (DB Will be Initiated in root folder on start)
 
 ## API documentation
 
@@ -35,3 +33,6 @@ API documentation has been published here: https://documenter.getpostman.com/vie
 - Hit endpoint _POST Book a ticket for a user_ to book a ticket for the event and save in orders table
 - Try _POST Cancel a booking for a user_ endpoint to mark booking/order status as cancelled in the database
 - _Retrieve the current status of an event_ is for retreieving saved orders/bookings in orders table in orders.db
+
+**Explore SQLite DB**
+Open orders.db in root with DB Browser for SQLite to explore database.

@@ -1,12 +1,15 @@
 const express = require("express");
 const eventRoutes = require("./routes/events");
 const db = require("./db/index");
+const morgan = require("morgan");
 
 const app = express();
 
 app.use(express.json());
 
 app.use("/", eventRoutes);
+
+app.use(morgan("combined"));
 
 app.use((err, req, res, next) => {
   console.error("Global error handler:", err);
